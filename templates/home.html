@@ -1,0 +1,33 @@
+<html>
+    <body bgcolor=black>
+    <center>
+        <br><br><br><br>
+        <h1 style = 'color:white'> MUSINSA STORE </h1>
+        <h3 style = 'color:white'> 간단한 정보를 입력받아 예측을 진행합니다</h3>
+
+        <form method='POST', action="{{url_for('main')}}">
+        <b>
+        <font color = 'white'>어떤 브랜드를 원하시나요??</font> <br>  <input type = 'text', name = '브랜드', placeholder = '무신사 기준입니다.'><br><br><br>
+        <font color = 'white'>날도 추운데 아우터나 고를까??</font> <br> <select name = '옷의 종류' >
+                <option value = 'none' >=== 선택 ===</option>
+                <option value= '001'>TOP</option>
+                <option value= '002'>OUTER</option>
+                <option value= '003'>PANTS</option>
+                <option value= '004'>BAG</option>
+                <option value= '005'>SHOES</option>
+                <option value= '011'>ACCESSORY</option>
+                <option value= '017'>SPORTS</option>
+                <option value= '018'>SNEAKERS</option>
+            </select><br><br><br>
+        <font color = 'white'>얼마나 많은 후기를 원하시나요!!<br></font> <input type = 'text', name = '추천 수', placeholder = '높을수록 스테디셀러입니다'><br><br><br>
+        <font color = 'white'>1일 랭킹</font> <br> <input type = 'number', name = '1일 랭킹', placeholder = '무신사 기준입니다.'><br><br><br>
+        <font color = 'white'>1주 랭킹</font> <br> <input type = 'number', name = '1주 랭킹', placeholder = '무신사 기준입니다.'><br><br><br>
+        <font color = 'white'>1달 랭킹</font> <br> <input type = 'number', name = '1달 랭킹', placeholder = '무신사 기준입니다.'><br><br><br>
+        <font color = 'white'>3달 랭킹</font> <br> <input type = 'number', name = '3달 랭킹', placeholder = '무신사 기준입니다.'><br><br><br>
+        <font color = 'white'>1년 랭킹</font> <br> <input type = 'number', name = '1년 랭킹', placeholder = '무신사 기준입니다.'><br><br><br>
+        </b>
+            <input type='submit', value='제출'>
+        </form>
+    </center>    
+    </body>
+</html>
