@@ -8,8 +8,11 @@
 # Skill
 
 Language : python 3.8.2
+
 Deployment : EC2
+
 Database : postgresql
+
 Application Framework : Flask
 
 # Data Pipeline
